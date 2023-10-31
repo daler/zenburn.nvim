@@ -7,7 +7,7 @@ return {
 		z = {bg =c.Delimiter.fg, fg=c.SignColumn.fg},
 	},
 	insert = {
-		a = {bg =c.Function.fg, fg=c.SignColumn.fg, gui="bold"},
+		a = {bg =c.CursorLineNr.fg, fg=c.SignColumn.fg, gui="bold"},
 		b = {bg =c.LineNr.fg, fg=c.Normal.fg},
 		c = {bg =c.CursorLine.bg, fg=c.Normal.fg},
 		z = {bg =c.Delimiter.fg, fg=c.SignColumn.fg},
@@ -19,7 +19,7 @@ return {
 		z = {bg =c.Delimiter.fg, fg=c.SignColumn.fg},
 	},
 	replace = {
-		a = {bg =c.Number.fg, fg=c.SignColumn.fg, gui="bold"},
+		a = {bg =c.Tag.fg, fg=c.SignColumn.fg, gui="bold"},
 		b = {bg =c.LineNr.fg, fg=c.Normal.fg},
 		c = {bg =c.CursorLine.bg, fg=c.Normal.fg},
 		z = {bg =c.Delimiter.fg, fg=c.SignColumn.fg},

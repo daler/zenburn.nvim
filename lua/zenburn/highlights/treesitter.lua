@@ -52,6 +52,11 @@ return {
 	TSStructure = { fg=c.Structure.fg },
 	TSTag = { fg=c.Tag.fg },
 	TSTagDelimiter = { fg=c.Tag.fg },
+	["@variable"] = { fg=c.Normal.fg },
+	["@punctuation.bracket.bash"] = { fg=c.Boolean.fg },
+	["@punctuation.special.bash"] = { fg=c.Boolean.fg },
+	["@constant.bash"] = { fg=c.Boolean.fg },
+	["@variable.bash"] = { fg=c.Boolean.fg },
 }
 -- TSAttribute
 -- TSBoolean
