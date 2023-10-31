@@ -12,6 +12,7 @@ return {
     require("zenburn.highlights.leap"),
     require("zenburn.highlights.gitsigns"),
     require("zenburn.highlights.hydra"),
-    require("zenburn.highlights.neotest")
+    require("zenburn.highlights.neotest"),
+    require("zenburn.highlights.fugitive"),
     require("zenburn.highlights.bufferline"),
 }
