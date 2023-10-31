@@ -13,4 +13,5 @@ return {
     require("zenburn.highlights.gitsigns"),
     require("zenburn.highlights.hydra"),
     require("zenburn.highlights.neotest")
+    require("zenburn.highlights.bufferline"),
 }
