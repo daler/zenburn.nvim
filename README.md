@@ -1,8 +1,11 @@
 Zenburn
 =======
 
-A port of the venerable [Zenburn](https://github.com/jnurmine/Zenburn)
-colorscheme to lua.
+Fork of https://github.com/phha/zenburn.nvim, which in turn is a port of the
+venerable [Zenburn](https://github.com/jnurmine/Zenburn)
+colorscheme to lua. This fork tweaks some colors to make them more obvious, and
+adds support for more plugins (fugitive, bufferline, and updated
+indent-blankline).
 
 Zenburn is a low-contrast color scheme for Vim. It’s easy for your eyes and
 designed to keep you in the zone for long programming sessions.
