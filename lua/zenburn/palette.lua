@@ -6,9 +6,9 @@ return {
 	Conditional = { fg="#f0dfaf", bold=true, },
 	Constant = { fg="#dcdccc", bold=true, },
 	Cursor = { fg="#000d18", bg="#8faf9f", bold=true, },
-	CursorColumn = { bg="#4f4f4f", },
-	CursorLine = { bg="#434443", },
-        CursorLineNr = { fg="#f2f48d",  bg="#2f2f2f" },
+	CursorColumn = { bg="#555555", },
+	CursorLine = { bg="#494949", },
+	CursorLineNr = { fg="#f2f48d",  bg="#2f2f2f" },
 	Debug = { fg="#bca3a3", bold=true, },
 	Define = { fg="#ffcfaf", bold=true, },
 	Delimiter = { fg="#8f8f8f", },
@@ -72,10 +72,8 @@ return {
 	Typedef = { fg="#dfe4cf", bold=true, },
 	Underlined = { fg="#dcdccc", underline=true, },
 	VertSplit = { fg="#dfaf8f", bg="#3f3f3f", },
-	Visual = { bg="#233323" },
+	Visual = { bg="#203020" },
 	VisualNOS = { bg="#233323" },
 	WarningMsg = { fg="#ffffff", bg="#333333", bold=true, },
 	WildMenu = { bg="#2c302d", fg="#cbecd0", underline=true, },
 }
-
-
