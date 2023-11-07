@@ -36,7 +36,9 @@ return {
 	ModeMsg = { fg="#ffcfaf", },
 	MoreMsg = { fg="#ffffff", bold=true, },
 	NonText = { fg="#5b605e", bold=true, },
-	Normal = { fg="#dcdccc", bg="#3f3f3f", },
+	-- Normal = { fg="#dcdccc", bg="#3f3f3f", },
+	-- Ever so slightly darker background:
+	Normal = { fg="#dcdccc", bg="#383838", },
 	NormalFloat = { bg="#353535", fg="#9f9f9f", },
 	Number = { fg="#8cd0d3", },
 	Operator = { fg="#f0efd0", },
