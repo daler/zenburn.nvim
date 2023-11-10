@@ -25,9 +25,9 @@ return {
 	Function = { fg="#f6f6ab", },
 	Identifier = { fg="#efdcbc", },
 	Include = { fg="#dfaf8f" ,bold=true, },
-	-- IncSearch = { fg="#f8f893", bg="#385f38" },
+	IncSearch = { fg="#f8f893", bg="#385f38" },
 	-- Disable the green background on IncSearch
-	IncSearch = { fg="#f8f893" },
+	-- IncSearch = { fg="#f8f893" },
 	Keyword = { fg="#f0dfaf", bold=true, },
 	Label = { fg="#dfcfaf", underline=true, },
 	LineNr = { fg="#959898",  bg="#353535" },
