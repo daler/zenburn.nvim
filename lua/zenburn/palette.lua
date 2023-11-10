@@ -78,7 +78,7 @@ return {
 	VertSplit = { fg="#dfaf8f", bg="#3f3f3f", },
 	-- Visual = { bg="#203020" },
 	-- Make visual selection background lighter, not darker
-	Visual = { bg="#555955" },
+	Visual = { bg="#535753" },
 	VisualNOS = { bg="#233323" },
 	WarningMsg = { fg="#ffffff", bg="#333333", bold=true, },
 	WildMenu = { bg="#2c302d", fg="#cbecd0", underline=true, },
