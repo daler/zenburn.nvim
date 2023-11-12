@@ -57,6 +57,7 @@ return {
 	["@punctuation.special.bash"] = { fg=c.Boolean.fg },
 	["@constant.bash"] = { fg=c.Boolean.fg },
 	["@variable.bash"] = { fg=c.Boolean.fg },
+	["@label.snakemake"] = { fg=c.Keyword.fg, bold=true}, 
 }
 -- TSAttribute
 -- TSBoolean
