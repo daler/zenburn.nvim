@@ -58,6 +58,7 @@ return {
 	["@constant.bash"] = { fg=c.Boolean.fg },
 	["@variable.bash"] = { fg=c.Boolean.fg },
 	["@label.snakemake"] = { fg=c.Keyword.fg, bold=true}, 
+	["@label.markdown"] = { underline = false, fg=c.Delimiter.fg },
 }
 -- TSAttribute
 -- TSBoolean
