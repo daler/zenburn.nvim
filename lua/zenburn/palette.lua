@@ -7,7 +7,8 @@ return {
 	Constant = { fg="#dcdccc", bold=true, },
 	Cursor = { fg="#000d18", bg="#8faf9f", bold=true, },
 	CursorColumn = { bg="#555555", },
-	CursorLine = { bg="#444444", },
+	-- CursorLine = { bg="#444444", },
+	CursorLine = { bg="#303030", },
 	CursorLineNr = { fg="#f2f48d",  bg="#2f2f2f" },
 	Debug = { fg="#bca3a3", bold=true, },
 	Define = { fg="#ffcfaf", bold=true, },
@@ -26,8 +27,6 @@ return {
 	Identifier = { fg="#efdcbc", },
 	Include = { fg="#dfaf8f" ,bold=true, },
 	IncSearch = { fg="#f8f893", bg="#385f38" },
-	-- Disable the green background on IncSearch
-	-- IncSearch = { fg="#f8f893" },
 	Keyword = { fg="#f0dfaf", bold=true, },
 	Label = { fg="#dfcfaf", underline=true, },
 	LineNr = { fg="#959898",  bg="#353535" },
