@@ -116,3 +116,66 @@ return {
   -- WinBar =         {                                            }, -- Window bar of current window.
   -- WinSeparator =   {                                            }, -- Separators between window splits.
 }
+
+
+-- For reference, here's a list of the unique colors used above, roughly sorted
+-- by color. This is useful when editing highlghts files, to choose which of
+-- the the several shades you want to use; it's otherwise tough to see this
+-- above.
+-- #262626
+-- #464646
+-- #8F8F8F
+-- #DFDFDF
+-- #EFEFEF
+-- #FFFFFF
+-- #000D18
+-- #2C302D
+-- #2E3330
+-- #2F2F2F
+-- #303030
+-- #313C36
+-- #333333
+-- #3F3F3F
+-- #3F4040
+-- #41363C
+-- #404040
+-- #2E4340
+-- #284F28
+-- #385F38
+-- #688060
+-- #DFE4CF
+-- #709080
+-- #7F9F7F
+-- #82A282
+-- #9ECE9E
+-- #CBECD0
+-- #CCDC90
+-- #88B090
+-- #8FAF9F
+-- #93B3A3
+-- #80D4AA
+-- #8CD0D3
+-- #9FAFAF
+-- #C0BED1
+-- #BCA3A3
+-- #C3BF9F
+-- #CFBFAF
+-- #CC9393
+-- #DCA3A3
+-- #DCDCCC
+-- #DFDFBF
+-- #F0EFD0
+-- #FFFFE0
+-- #E3CEAB
+-- #E89393
+-- #F18C96
+-- #ECBCBC
+-- #EFEF8F
+-- #F8F893
+-- #EFEFAF
+-- #FFCFAF
+-- #FFD7A7
+-- #DFAF8F
+-- #EFDCBC
+-- #DFCFAF
+-- #F0DFAF
