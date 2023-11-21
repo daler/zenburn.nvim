@@ -2,61 +2,41 @@ Zenburn
 =======
 
 Fork of https://github.com/phha/zenburn.nvim, which in turn is a port of the
-venerable [Zenburn](https://github.com/jnurmine/Zenburn)
-colorscheme to lua. This fork tweaks some colors to make them more obvious, and
-adds support for more plugins (fugitive, bufferline, and updated
-indent-blankline).
+venerable [Zenburn](https://github.com/jnurmine/Zenburn) colorscheme to lua.
+This fork tweaks some colors to make them more obvious, and adds support for
+more plugins (fugitive, bufferline, and updated indent-blankline), and somewhat
+simplifies the code.
 
-Zenburn is a low-contrast color scheme for Vim. It’s easy for your eyes and
-designed to keep you in the zone for long programming sessions.
-
-The aim of this port is to bring Zenburn into the modern age, with support for
-[Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) and many
-more plugins.
-
-![Screenshot 1](images/screenshot01.png)
+Original is MIT license (see LICENSE.txt).
 
 Installation
 ------------
 
-Using your favorite package manager:
-
-[vim-plug](https://github.com/junegunn/vim-plug)
+Install like any other plugin, e.g., with [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
-Plug "phha/zenburn.nvim"
+Plug "daler/zenburn.nvim"
 ```
 
-[packer](https://github.com/wbthomason/packer.nvim)
+Or [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
-use {
-    "phha/zenburn.nvim",
-    config = function() require("zenburn").setup() end
-}
-```
-
-[paq](https://github.com/savq/paq-nvim)
-
-```lua
-require("paq") {
-    "phha/zenburn.nvim";
-}
+require("lazy").setup({
+    "daler/zenburn.nvim",
+})
 ```
 
 Setup
 -----
 
-With VimScript:
-
 ```vim
+" vim
 colorscheme zenburn
 ```
 
-With lua:
-
 ```lua
-require("zenburn").setup()
+-- lua
+vim.cmd("colorscheme zenburn")
 ```
 
 To set the theme in lualine:
@@ -69,46 +49,34 @@ require("lualine").setup {
 }
 ```
 
-Plugin Support
---------------
-
-Zenburn features custom highlighting for these plugins:
-
-* [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-* [lualine](https://github.com/nvim-lualine/lualine.nvim)
-* [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
-* [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-* [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
-* [symbols-outline](https://github.com/simrat39/symbols-outline.nvim)
-* [trouble](https://github.com/folke/trouble.nvim)
-* [which-key](https://github.com/folke/which-key.nvim)
-* [leap](https://github.com/ggandor/leap.nvim)
-* [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
-* [hydra](https://github.com/anuvyklack/hydra.nvim)
-* [neotest](https://github.com/nvim-neotest/neotest)
-
 Contributing
 ------------
 
-Pull requests are always welcome, especially for additional plugins. Please
-include one or more screenshots showcasing your contribution.
+Here is the sequence of loaded files:
 
-Zenburn already has a rather large palette. I'm trying to avoid color bloat,
-so please don't add any new colors if at all possible and refer to existing
-ones instead.
+- `colors/zenburn.lua` is the entrypoint from nvim's point of view. It loads...
+- `lua/zenburn/init.lua` which in turn loads...
+- `lua/zenburn/highlights/init.lua` which in turn loads...
+- `lua/zenburn/highlights/*.lua`, each of which loads...
+- `lua/zenburn/palette.lua` which defines the colors.
 
-No
---
-* dayglo vomit
-* black, red, blue and green on screaming white background
-* headache
-* watery, squinting eyes
-* the "I wanna run away" feeling
-* vimL
+To change the colors themselves, edit `lua/zenburn/palette.lua`. This includes
+entries for all highlight groups under `:help highlight-groups` and `:help
+group-name`.
 
-Yes
----
-* alien fruit salad
-* harmonious colors help with concentration
-* improved focus
-* Lua
+All other files should refer to these colors.
+
+If using treesitter syntax highlighting, treesitter may find more tokens than
+there are default vim highlight groups. This is the first place to make changes
+if you don't like how a particular file type is being highlighed.
+
+Run `:Inspect` to get a readout of what highlight group is under the cursor. If
+it's not in `lua/zenburn/palette.lua` or
+`lus/zenburn/highlights/treesitter.lua`, then add it to the latter file.
+
+To inspect the colors for that highlight group, use `:Telescope highlights`.
+
+When modifying colors, the
+[nvim-colorizer](https://github.com/norcalli/nvim-colorizer.lua) plugin is
+helpful with the `:ColorizerToggle` command, which highlights hex color codes
+in their respective colors.
