@@ -80,3 +80,15 @@ When modifying colors, the
 [nvim-colorizer](https://github.com/norcalli/nvim-colorizer.lua) plugin is
 helpful with the `:ColorizerToggle` command, which highlights hex color codes
 in their respective colors.
+
+If using `lazy.nvim` to load plugins, you can load from a local directory with
+the `dir` argument, like this:
+
+```lua
+require("lazy").setup({
+    { dir="location/on/disk/zenburn.nvim" },
+})
+```
+
+Restarting nvim will reload lazy.nvim which should trigger a reload of the
+colorscheme reflecting your local changes.
