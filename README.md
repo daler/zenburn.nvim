@@ -1,5 +1,4 @@
-Zenburn
-=======
+# Zenburn
 
 Fork of https://github.com/phha/zenburn.nvim, which in turn is a port of the
 venerable [Zenburn](https://github.com/jnurmine/Zenburn) colorscheme to lua.
@@ -9,8 +8,7 @@ simplifies the code.
 
 Original is MIT license (see LICENSE.txt).
 
-Installation
-------------
+## Installation
 
 Install like any other plugin, e.g., with [vim-plug](https://github.com/junegunn/vim-plug):
 
@@ -26,8 +24,8 @@ require("lazy").setup({
 })
 ```
 
-Setup
------
+## Setup
+
 
 ```vim
 " vim
@@ -49,8 +47,7 @@ require("lualine").setup {
 }
 ```
 
-Contributing
-------------
+## Modifying
 
 Here is the sequence of loaded files:
 
@@ -60,26 +57,14 @@ Here is the sequence of loaded files:
 - `lua/zenburn/highlights/*.lua`, each of which loads...
 - `lua/zenburn/palette.lua` which defines the colors.
 
-To change the colors themselves, edit `lua/zenburn/palette.lua`. This includes
+**To change the colors themselves**, edit `lua/zenburn/palette.lua`. This includes
 entries for all highlight groups under `:help highlight-groups` and `:help
 group-name`.
 
 All other files should refer to these colors.
 
-If using treesitter syntax highlighting, treesitter may find more tokens than
-there are default vim highlight groups. This is the first place to make changes
-if you don't like how a particular file type is being highlighed.
 
-Run `:Inspect` to get a readout of what highlight group is under the cursor. If
-it's not in `lua/zenburn/palette.lua` or
-`lus/zenburn/highlights/treesitter.lua`, then add it to the latter file.
-
-To inspect the colors for that highlight group, use `:Telescope highlights`.
-
-When modifying colors, the
-[nvim-colorizer](https://github.com/norcalli/nvim-colorizer.lua) plugin is
-helpful with the `:ColorizerToggle` command, which highlights hex color codes
-in their respective colors.
+### Using local changes
 
 If using `lazy.nvim` to load plugins, you can load from a local directory with
 the `dir` argument, like this:
@@ -92,3 +77,43 @@ require("lazy").setup({
 
 Restarting nvim will reload lazy.nvim which should trigger a reload of the
 colorscheme reflecting your local changes.
+
+### Workflow
+
+If you don't like how a particular file type is being highlighted, you may want
+to mess with the treesitter highlight group configuration.
+
+To do this, put the cursor on the text you want to change. Run `:Inspect` to
+get a readout of what highlight group is under the cursor. Check for that
+highlight group in in `lua/zenburn/palette.lua` (which contains the nvim
+built-in highlight groups); if it's there you can change the color directly.
+Otherwise, look for it in `lua/zenburn/highlights/treesitter.lua`, and if it's
+not there, then add the highlight group here.
+
+For example, when writing this very markdown file, if I run `:Inspect` on some
+normal text I see `- @spell.markdown links to @spell markdown`. That `@`
+typically means it's a treesitter highlight group. Sure enough, I don't see
+anything relevant in `lua/zenburn/palette.lua` which only has built-in
+highlight groups. There's similarly nothing noted in
+`lua/zenburn/highlights/treesitter.lua`. But imagine for some reason I wanted
+bright red text everywhere, then I could add this to that latter file:
+
+```lua
+return {
+ -- ... lots of other config here...
+ [ "@spell.markdown" ] = { fg = "#ff0000" },
+}
+```
+
+If I set up lazy.nvim to load from a local directory where I've made this
+change (as described above), then restarting nvim will give bright red text
+everywhere that treesitter parsed the markdown as "@spell" highlight group.
+
+### Other hints
+
+- To inspect the colors for that highlight group, use `:Telescope highlights`.
+
+- When modifying colors, the
+  [nvim-colorizer](https://github.com/norcalli/nvim-colorizer.lua) plugin is
+  helpful with the `:ColorizerToggle` command, which highlights hex color codes
+  in their respective colors.
