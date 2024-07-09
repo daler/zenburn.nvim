@@ -61,6 +61,10 @@ return {
   ["@label.markdown"] = { underline = false, fg=c.Delimiter.fg },
   ["@field"] = { link="Identifier" },
   ["@function.builtin.python"] = { link="Function" },
+  ["@markup.raw.markdown_inline"] = { fg=c.Debug.fg, italic=true},
+  ["@markup.link.url.markdown_inline"] = {fg=c.StorageClass.fg, italic=true},
+  ["@markup.link.label.markdown_inline"] = {fg=c.Label.fg },
+  ["@markup.heading"] = {fg=c.Keyword.fg, bold=true},
 }
 -- TSAttribute
 -- TSBoolean

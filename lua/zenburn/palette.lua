@@ -91,7 +91,7 @@ return {
   Statement =      { fg="#e3ceab",                              }, -- any statement. Default link for Conditional, Repeat, Label, Operator, Keyword, Exception.
   StatusLine =     { fg="#313633", bg="#ccdc90",                }, -- Status line of current window.
   StatusLineNC =   { fg="#2e3330", bg="#88b090",                }, -- Status lines of not-current windows. Note: If this is equal to "StatusLine", Vim will use "^^^" in the status line of the current window.
-  StorageClass =   { fg="#c3bf9f",               bold=true,     }, -- static, register, volatile, etc. By default, links to Type
+  StorageClass =   { fg="#9fafaf",               bold=true,     }, -- static, register, volatile, etc. By default, links to Type
   String =         { fg="#cc9393",                              }, -- a string constant: "this is a string". By default, links to Constant.
   Structure =      { fg="#efefaf",               bold=true,     }, -- struct, union, enum, etc. By default, links to Type.
   -- Substitute =    {                                            }, -- |:substitute| replacement text highlighting.
