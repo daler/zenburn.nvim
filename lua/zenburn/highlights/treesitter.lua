@@ -65,6 +65,8 @@ return {
   ["@markup.link.url.markdown_inline"] = {fg=c.StorageClass.fg, italic=true},
   ["@markup.link.label.markdown_inline"] = {fg=c.Label.fg, underline=true},
   ["@markup.heading"] = {fg=c.Keyword.fg, bold=true},
+  ["@markup.strong.markdown_inline"] = { fg=c.Question.fg,  bold=true},
+  ["@markup.italic.markdown_inline"] = { italic=true },
 }
 -- TSAttribute
 -- TSBoolean
