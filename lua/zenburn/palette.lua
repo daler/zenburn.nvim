@@ -107,7 +107,7 @@ return {
   Type =           { fg="#dfdfbf",                              }, -- int, long, char, etc. Default link for StorageClass, Structure, Typedef
   Underlined =     { fg="#dcdccc",               underline=true,}, -- text that stands out; HTML links. 
   VertSplit =      { fg="#dfaf8f", bg="#3f3f3f",                },
-  Visual =         { bg="#484848",                              }, -- Visual mode selection. Default zenburn bg is #203020
+  Visual =         { bg="#525250",                              }, -- Visual mode selection. Default zenburn bg is #203020
   VisualNOS =      { bg="#233323",                              }, -- Visual mode selection when vim is "Not Owning the Selection".
   WarningMsg =     { fg="#ffffff", bg="#333333", bold=true,     }, -- Warning messages
   -- Whitespace =     {                                            }, -- "nbsp", "space", "tab", "multispace", "lead" and "trail" in 'listchars'.
