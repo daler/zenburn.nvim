@@ -14,4 +14,5 @@ return {
     require("zenburn.highlights.bufferline"),
     require("zenburn.highlights.headlines"),
     require("zenburn.highlights.obsidian"),
+    require("zenburn.highlights.render-markdown")
 }
