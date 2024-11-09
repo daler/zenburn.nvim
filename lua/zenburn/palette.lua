@@ -31,7 +31,7 @@ return {
   DiffAdd =        { fg="#709080", bg="#313c36", bold=true,     }, -- Diff mode: Added line
   DiffChange =     { bg="#333333",                              }, -- Diff mode: Changed line
   DiffDelete =     { fg="#9f8888", bg="#464646",                }, -- Diff mode: Deleted line
-  DiffText =       { fg="#ecbcbc", bg="#41363c", bold=true,     }, -- Diff mode: Changed text within a changed line
+  DiffText =       { bg="#111111", bold=true,                   }, -- Diff mode: Changed text within a changed line
   Directory =      { fg="#dcdccc",               bold=true,     }, -- Directory names (and other special names in listings).
   -- EndOfBuffer =    {                                            }, -- Filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
   ErrorMsg =       { fg="#80d4aa", bg="#2f2f2f", bold=true,     }, -- Error messages on the command line.
