@@ -2,12 +2,12 @@ local c = require("zenburn.palette")
 return {
   RenderMarkdownCodeInline = { bg="none" },
 
-  -- Colors for markdown heading backgrounds (when not in insert mode)
-  RenderMarkdownH1Bg = { underline=true, },
-  RenderMarkdownH2Bg = { underline=true, },
-  RenderMarkdownH3Bg = { underline=true, },
-  RenderMarkdownH4Bg = { underline=true, },
-  RenderMarkdownH5Bg = { underline=true, },
+  -- Don't change background of headings
+  RenderMarkdownH1Bg = { },
+  RenderMarkdownH2Bg = { },
+  RenderMarkdownH3Bg = { },
+  RenderMarkdownH4Bg = { },
+  RenderMarkdownH5Bg = { },
 
   -- Don't change the foreground text
   RenderMarkdownH1 = { },

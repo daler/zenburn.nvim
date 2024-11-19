@@ -67,6 +67,13 @@ return {
   ["@markup.heading"] = {fg=c.Keyword.fg, bold=true},
   ["@markup.strong.markdown_inline"] = { fg=c.Question.fg,  bold=true},
   ["@markup.italic.markdown_inline"] = { italic=true },
+  ["@function.rst"] = { fg=c.Boolean.fg, },
+  ["@function.builtin.rst"] = { fg=c.Boolean.fg, },
+  ["@markup.link.rst"] = {fg=c.Label.fg, underline=true},
+  ["@constant.rst"] = { fg=c.Conditional.fg },
+  ["@markup.link.label.rst"] = {fg=c.StorageClass.fg, italic=true},
+  ["@markup.raw.rst"] = { fg = c.String.fg }, 
+  ["@variable.parameter.rst"] = { fg = c.Delimiter.fg },
 }
 -- TSAttribute
 -- TSBoolean
