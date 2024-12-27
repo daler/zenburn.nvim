@@ -23,7 +23,7 @@ return {
   RenderMarkdownLink = { },
 
   -- Callouts (mostly unchanged)
-  RenderMarkdownInfo = { fg=c.Number.fg },
+  RenderMarkdownInfo = { fg = c.Number.fg },
   -- RenderMarkdownSuccess = { },
   -- RenderMarkdownHint = { },
   -- RenderMarkdownWarn = { },
@@ -31,7 +31,8 @@ return {
   -- RenderMarkdownQuote = { },
 
   -- RenderMarkdownUnchecked = { },
-  -- RenderMarkdownChecked = { },
+  RenderMarkdownChecked = { fg = c.StatusLineNC.bg },
+  RenderMarkdownTodo = { fg = c.Pmenu.fg },
   -- RenderMarkdownMath = { },
   -- RenderMarkdownCode = { },
   -- RenderMarkdownDash = { },
