@@ -19,7 +19,7 @@ return {
   Constant =       { fg="#dcdccc", bold=true,                   }, -- any constant. Preferred highlight group, default for String, Character, Number, Boolean, Float
   -- CurSearch =      {                                            }, -- Used for highlighting a search pattern under the cursor (see 'hlsearch').
   -- CursoIM =        {                                            }, -- Like Cursor, but used when in IME mode.
-  CursorColumn =   {               bg="#555555",                }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
+  CursorColumn =   {               bg="#404040",                }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
   Cursor =         { fg="#000d18", bg="#8faf9f", bold=true,     }, -- Character under the cursor.
   CursorLine =     {               bg="#303030",                }, -- default #444444; Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
   -- CursorLineFold = {                                            }, -- Like FoldColumn when 'cursorline' is set for the cursor line.
