@@ -29,7 +29,7 @@ return {
   Define =         { fg="#ffcfaf",               bold=true,     }, -- preprocessor #define. By default, linked to PreProc
   Delimiter =      { fg="#8f8f8f",                              }, -- character that needs attention. By default, linked to Special.
   DiffAdd =        { bg="#385038"                               }, -- Diff mode: Added line
-  DiffChange =     { bg="#414e64",                              }, -- Diff mode: Changed line
+  DiffChange =     { bg="#414550",                              }, -- Diff mode: Changed line
   DiffDelete =     { fg="#9f8888", bg="#464646",                }, -- Diff mode: Deleted line
   DiffText =       { bg="#0e1623",               bold=true,     }, -- Diff mode: Changed text within a changed line
   Directory =      { fg="#dcdccc",               bold=true,     }, -- Directory names (and other special names in listings).
