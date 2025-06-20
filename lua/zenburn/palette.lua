@@ -28,10 +28,10 @@ return {
   Debug =          { fg="#bca3a3",               bold=true,     }, -- debugging statements. By default, linked to Special.
   Define =         { fg="#ffcfaf",               bold=true,     }, -- preprocessor #define. By default, linked to PreProc
   Delimiter =      { fg="#8f8f8f",                              }, -- character that needs attention. By default, linked to Special.
-  DiffAdd =        { fg="#709080", bg="#313c36", bold=true,     }, -- Diff mode: Added line
-  DiffChange =     { bg="#333333",                              }, -- Diff mode: Changed line
+  DiffAdd =        { bg="#385038"                               }, -- Diff mode: Added line
+  DiffChange =     { bg="#414e64",                              }, -- Diff mode: Changed line
   DiffDelete =     { fg="#9f8888", bg="#464646",                }, -- Diff mode: Deleted line
-  DiffText =       { bg="#585838",               bold=true,     }, -- Diff mode: Changed text within a changed line
+  DiffText =       { bg="#0e1623",               bold=true,     }, -- Diff mode: Changed text within a changed line
   Directory =      { fg="#dcdccc",               bold=true,     }, -- Directory names (and other special names in listings).
   -- EndOfBuffer =    {                                            }, -- Filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
   ErrorMsg =       { fg="#80d4aa", bg="#2f2f2f", bold=true,     }, -- Error messages on the command line.
